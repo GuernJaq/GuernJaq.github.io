@@ -1,0 +1,18 @@
+@import url(styles.css);
+
+:root {
+    --bs-link-color: #86ac9a;
+    --bs-link-hover-color: #abcabc;
+}
+
+.social-icons .social-icon:hover {
+    background-color: var(--bs-green);
+}
+
+.bg-primary {
+    background-color: var(--bs-green) !important;
+}
+
+.text-primary {
+    color: var(--bs-green) !important;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Scratch Page</title>
+    <link rel="stylesheet" href="/css/scratch.css">
+    <link rel="icon" href="/images/BlueFlower.png" />
+</head>
+
+<body>
+    <div class="stickyHeader">
+        <h2>Jaquelyn's IS 201 Final</h2>
+        <div class="concept"><img src="../images/WW_Concept.png" width="100px"/></div>
+        
+    </div>
+    <div id="navbar" class="navbar">
+        <div class="homeTab"><a href="/index.html">Resume</a></div>
+        <div class="scratchTab active"><a href="#">Scratch</a></div>
+        <div class="appTab"><a href="ww_proto.html">Web App</a></div>
+    </div>
+    <div class="mainContent">
+        <p>Hello there! I've organized the requirements here to make sure I got them all, I've added some anchors to
+            help navigation be a bit easier as well, hope your finals week is going well :)</p>
+        <p>The rest of this page is based on some of my favorite games right now, including part of the soundtrack of
+            Wandering Willows as my embed, and an excellent Skyrim census I found browsing Tableau.</p>
+        <p>In addition, my webapp started as a remake of Wandering Willows! It's been simplified to a little minigame
+            for this project, but it's a game I really enjoy.</p>
+        <ol>
+            <li>
+                HTML requirements:
+                <ul>
+                    <li><span class="finished">Ordered list embedded in unordered (or other way around)</span><a
+                            href="#" class="locations"> - That's this list</a></li>
+                    <li><span class="finished">At least one image not from the Bootstrap theme</span><a href="#imgReq" class="locations"> - There's a concept image of my Web App in several spots (the images in the Web App are all through js and css instead)</a></li>
+                    <li><span class="finished">An embedded YouTube video</span><a class="locations" href="#YTvid"> -
+                            Right below this list</a></li>
+                    <li><span class="finished">An on-page anchor</span><a class="locations" href="#toTop"> - Each of
+                            these is an anchor, but there's also one under the Tableau</a></li>
+                    <li><span class="finished">A custom background color or background image</span><span
+                            class="locations"> - There's a purple background</span></li>
+                </ul>
+            </li>
+            <li>
+                Stylesheet requirements:
+                <ul>
+                    <li><span class="finished">At least four style definitions</span><span class="locations"> - There
+                            are a lot more than 4</span></li>
+                    <li><span class="finished">Styles that specify font color</span><span class="locations"> - All of
+                            the text is a dark purple, and this text is green</span></li>
+                    <li><span class="finished">Styles that specify font family</span><span class="locations"> - The main
+                            font is Gill Sans (or any sans serif font) and my navbar is Determination Mono, a free font
+                            mimicking Undertale's font</span></li>
+                    <li><span class="finished">At least three divs for positioning and styling</span><span
+                            class="locations"> - The navbar uses divs and flex, and the header is a sticky div, plus several more to achieve this look</span>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="finished">Tableau graph, no topic</span><a class="locations" href="#viz1744861973170"> -
+                    Below my YouTube embed</a></li>
+            <li><span class="finished">Navigation back to professional pages</span><a class="locations" href="#navbar">
+                    - The "Resume" button in the navbar links to my Bootstrap resume page</a></li>
+        </ol>
+
+        <iframe id="YTvid" width="560" height="315" src="https://www.youtube.com/embed/3XnxMat4cIU?si=Q-Cc3T8Xg-f5fgas"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        <img id="imgReq" src="../images/WW_Concept.png"/>
+        <h3>Tableau, shrunken to fit the page better (hover over to see scrollbars)</h3>
+        <div class='tableauPlaceholder' id='viz1744861973170' style='position: relative'><noscript><a href='#'><img
+                        alt='Skyrim Census '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sk&#47;SkyrimCensus-Year201ofthe4thEra&#47;SkyrimCensus&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='SkyrimCensus-Year201ofthe4thEra&#47;SkyrimCensus' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sk&#47;SkyrimCensus-Year201ofthe4thEra&#47;SkyrimCensus&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object></div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1744861973170');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '1020px';
+            vizElement.style.height = '1500px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+        <br><br>
+        <a id="toTop" href="#navbar">Back to top</a>
+    </div>
+</body>
+
+</html>

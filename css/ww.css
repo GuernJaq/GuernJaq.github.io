@@ -1,0 +1,80 @@
+.tableRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidePanel{
+    flex: 2 0 200px;
+}
+
+.middleSection{
+    flex: 0 0 400px;
+}
+
+#startDiv{
+    position:absolute;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background-color: rgba(255,255,255,.4);
+    z-index: 1;
+}
+
+#endDiv{
+    position:absolute;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background-color: rgba(255,255,255,.4);
+    z-index: 1;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.recipes{
+    border: 1px solid black;
+    background-color: rgb(130,100,130);
+}
+
+.bush {
+    /* background-image: url("../images/WW_Bush.png");
+    background-size: contain; Moved this to game logic so rendering layers are correct*/
+    position:absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.bush1{
+    transform: translate(250px, 250px);
+}
+
+.bush2{
+    transform: translate(250px, 50px);
+}
+
+.bush3{
+    transform: translate(50px, 250px);
+}
+
+.bush4{
+    transform: translate(50px, 50px);
+}
+
+.berry{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.berry1{
+    background-image: url("../images/WW_Raspberry.png");
+    background-size: contain;
+}
+
+.berry2{
+    background-image: url("../images/WW_BlueRaspberry.png");
+    background-size: contain;
+    transform: translate(50px, 30px);
+}

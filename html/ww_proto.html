@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+    <link rel="stylesheet" href="/css/scratch.css">
+    <link rel="stylesheet" href="/css/ww.css">
+    <link rel="icon" href="/images/BlueFlower.png">
+</head>
+
+<body>
+    <div class="stickyHeader">
+        <h2>Jaquelyn's IS 201 Final</h2>
+        <img class="concept" src="../images/WW_Concept.png" width="100px"/>
+    </div>
+    <div class="navbar">
+        <div class="homeTab"><a href="/index.html">Resume</a></div>
+        <div class="scratchTab"><a href="scratch.html">Scratch</a></div>
+        <div class="appTab active"><a href="#">Web App</a></div>
+    </div>
+    <div class="mainContent">
+        <table class="mainTable">
+            <tr class="tableRow">
+                <td class="sidePanel">
+                    <div id="petInfo"><span id="currEnergy"></span>/10</div>
+                </td>
+                <th class="middleSection">
+                    Wandering Willows
+                </th>
+                <th class="sidePanel">
+                    <div id="timer"></div>
+                    <div id="score"></div>
+                </th>
+            </tr>
+            <tr class="tableRow">
+                <td class="sidePanel">
+                    <table id="inventory">
+                        <tr>
+                            <th>Item</th>
+                            <th>Count</th>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td onclick="feed(1,0)" class="recipes">Feed Raspberry</td>
+                            <td onclick="feed(2,1)" class="recipes">Feed Blue Raspberry</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="middleSection">
+                    <div id="endDiv" class="hidden"></div>
+                    <div id="startDiv" onclick="start()">Click anywhere in the game area to start</div>
+                    <div class="bush bush1">
+                        <div id="b1" class="berry berry1" onclick="getBerry(225,225,1,'b1')"></div>
+                        <div id="b2" class="berry berry2" onclick="getBerry(275,250,2,'b2')"></div>
+                    </div>
+                    <div class="bush bush2">
+                        <div id="b3" class="berry berry1" onclick="getBerry(225,25,1,'b3')"></div>
+                        <div id="b4" class="berry berry2" onclick="getBerry(275,50,2,'b4')"></div>
+                    </div>
+                    <div class="bush bush3">
+                        <div id="b5" class="berry berry1" onclick="getBerry(25,225,1,'b5')"></div>
+                        <div id="b6" class="berry berry2" onclick="getBerry(75,250,2,'b6')"></div>
+                    </div>
+                    <div class="bush bush4">
+                        <div id="b7" class="berry berry1" onclick="getBerry(25,25,1,'b7')"></div>
+                        <div id="b8" class="berry berry2" onclick="getBerry(75,50,2,'b8')"></div>
+                    </div>
+                    <canvas id="mainGame" width="400" height="400" style="border: 1px solid black;">Sorry, your browser
+                        doesn't support Canvas.</canvas>
+                </td>
+                <td class="sidePanel">
+                    <table id="crafting">
+                        <tr>
+                            <th>Item</th>
+                            <th>Requires</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Raspberry Juice</td>
+                            <td>X2 Raspberry</td>
+                            <td onclick="craftRaspberryJuice()" class="recipes">Craft!</td>
+                        </tr>
+                        <tr>
+                            <td>Blue Raspberry Juice</td>
+                            <td>X2 Blue Raspberry</td>
+                            <td onclick="craftBlueRaspberryJuice()" class="recipes">Craft!</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Controls: WASD to move, click on berries to have your pet collect them.
+                    Collecting berries costs energy, feed your pet to replenish it.
+                    Crafting juice will earn points instead of energy, go for the high score without exhausting your
+                    pet!
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="/javascript/index.js"></script>
+</body>
+
+</html>
